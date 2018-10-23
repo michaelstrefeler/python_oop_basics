@@ -17,7 +17,7 @@ class Employee:
         return f"Employee('{self.first_name}', '{self.last_name}', {self.pay})"
 
     def __str__(self):
-            return f'{self.fullname} - {self.email}'
+        return f'{self.fullname} - {self.email}'
 
     def __add__(self, other):
         return self.pay + other.pay
@@ -69,7 +69,6 @@ class Developer(Employee):
 
 
 class Manager(Employee):
-
     def __init__(self, first_name, last_name, pay, employees=None):
         super().__init__(first_name, last_name, pay)
         if employees is None:
